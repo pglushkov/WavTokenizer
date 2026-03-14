@@ -28,6 +28,9 @@ bandwidth_id = torch.tensor([0])
 bandwidth_id = bandwidth_id.to(device1) 
 
 audio_out = wavtokenizer.decode(features, bandwidth_id=bandwidth_id)   
+
+print(f"==== All done, output audio shape: {audio_out.shape}")
+
 torchaudio.save(output_wav, audio_out.cpu(), sample_rate=24000, encoding='PCM_S', bits_per_sample=16)
 
 
