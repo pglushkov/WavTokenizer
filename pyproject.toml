@@ -13,8 +13,8 @@ dependencies = [
     "encodec>=0.1.1",
     "einops>=0.6.1",
     "pyyaml>=6.0",
-    "huggingface_hub>=1.7.*",
-    "numpy>=2.4.*",
+    "huggingface_hub>=1.7.0",
+    "numpy>=2.4.0",
     "torchcodec>=0.10.0",
 ]
 
